@@ -99,7 +99,7 @@ int fib(int n) {
 
 #### 结构
 
-![array-2](/Users/yuki/Downloads/array-2.png)
+![array](https://media.geeksforgeeks.org/wp-content/uploads/array-2.png)
 
 #### 代码实现
 
@@ -147,7 +147,7 @@ https://leetcode-cn.com/problems/move-zeroes/
 
 #### 结构
 
-![Linkedlist](/Users/yuki/Downloads/Linkedlist.png)
+![Linkedlist](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 #### 代码实现
 
@@ -235,7 +235,7 @@ class LinkedList {
 
 1. Leetcode
 
-
+https://leetcode-cn.com/problems/reverse-linked-list/
 
 2. 常用思路
 
@@ -257,7 +257,7 @@ Iterative
 
 + Stack
 
-![stack](/Users/yuki/Downloads/stack.png)
+![stack](https://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/stack.png)
 
 
 
@@ -356,7 +356,7 @@ class Main {
 
 + Queue
 
-![Queue](/Users/yuki/Downloads/Queue.png)
+![Queue](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/02/Queue.png)
 
 + Deque
 
