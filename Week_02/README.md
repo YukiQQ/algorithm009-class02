@@ -91,7 +91,7 @@ A tree whose elements have *at most 2 children* is called a binary tree.
 
 A Tree node contains following parts.
 \1. Data
-\2. Pointer to left child
+\2. *Pointer* to left child
 \3. Pointer to right child
 
 ```java
@@ -119,11 +119,64 @@ class Node
 
 1.前序（Pre-order）：根-左-右 
 
+
+
+
+
 2.中序（In-order）：左-根-右 
+
+代码实现】
+
+每个TreeNode都会进行一次“左-根-右”的判断；
+
+只有当该TreeNode的左儿子回溯结果后才会处理当前TreeNode，然后处理右儿子。
+
+
 
 3.后序（Post-order）：左-右-根
 
 
+
+4. N叉树同理
+
+
+
++ 示例代码
+
+```python
+defpreorder(self, root):  
+if root:    
+self.traverse_path.append(root.val)    
+self.preorder(root.left)    
+self.preorder(root.right) 
+
+definorder(self, root): 
+if root:    
+self.inorder(root.left)    
+self.traverse_path.append(root.val)    
+self.inorder(root.right) 
+
+defpostorder(self, root): 
+if root:    
+self.postorder(root.left)    
+self.postorder(root.right)    
+self.traverse_path.append(root.val) 
+
+```
+
+
+
+
+
+## 二叉搜索树
+
+左子树<根结点<右子树
+
+中序遍历二叉搜索树可以得到升序排列。
+
+
+
+链表是特殊的二叉树，二叉树是特殊的图。
 
 + 代码模板
 
@@ -138,6 +191,10 @@ https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 ## Implementation
 
 见代码。
+
++ Read遍历
+
+
 
 ## Application
 
@@ -161,6 +218,10 @@ https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
 
 ## 定义
 
+可以迅速在一堆数中找到最大或最小的数组结构。
+
+根节点最大的叫大顶堆；根节点最小的叫小顶堆。
+
 a *special Tree-based* data structure in which the tree is *a complete binary tree*.
 
 Heaps can be of two types:
@@ -179,13 +240,15 @@ Heaps can be of two types:
 
 ### Representation
 
+用数组来实现的(复杂的数据结构会由简单数据结构来实现)。
 
 
-A Binary Heap is a Complete Binary Tree. A binary heap is typically represented as an array.
+
+A Binary Heap is a *Complete Binary Tree*. A binary heap is typically *represented as an array*.
 
 - The root element will be at Arr[0].
 
-- Below table shows indexes of other nodes for the i node, i.e., Arr[i]:
+- **Below table shows indexes of other nodes for the i node, i.e., Arr[i]:**
 
   | Arr[(i-1)/2] | Returns the parent node      |
   | ------------ | ---------------------------- |
